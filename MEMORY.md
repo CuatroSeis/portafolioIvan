@@ -1,5 +1,9 @@
 # MEMORY.md — Procesos en curso
 
+## 2026-10-08 — Scroll in/out
+- Nuevo `Reveal`: `whileInView` con `once: false` (entra fade+rise, sale al estado inicial), respeta reduced-motion, nunca desmonta. Las 6 secciones envueltas en `App`. Fondo con `background-attachment: fixed`. `ProjectCard` sin animación propia (evita duplicar).
+- Tests 9/9 (nuevo: contenido en DOM con animación). Build verde.
+
 ## 2026-10-08 — Destacados + compactas + footer mate
 - `Project.featured?: boolean`. EasyEventQR destacado (card grande); FinOps y Regicide en `CompactProjectCard` (nombre, 1 línea, tags, repo corto). Destacados primero, ordenados por posición en el array.
 - Footer con mate: "el mate lo pongo yo 🧉" + "hecho con React, TypeScript y mate".

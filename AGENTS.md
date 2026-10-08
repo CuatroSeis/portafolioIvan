@@ -5,7 +5,7 @@ Tests: Vitest + Testing Library. Package manager: pnpm. Deploy: Vercel.
 
 ## Estructura
 
-- `src/components/ui/` — TerminalWindow, SectionTitle, Tag, TechBadge, BrandIcons, ProjectCard (destacados), CompactProjectCard, TimelineItem. Solo reciben props, nunca importan `src/data`.
+- `src/components/ui/` — TerminalWindow, SectionTitle, Tag, TechBadge, BrandIcons, ProjectCard (destacados), CompactProjectCard, TimelineItem, Reveal (animación in/out por scroll, nunca desmonta). Solo reciben props, nunca importan `src/data`.
 - `src/components/layout/` — Navbar (scroll-spy + menú mobile), Footer.
 - `src/components/sections/` — Hero, About, Stack, Projects, Journey, Contact. Cada una lee su archivo de `src/data`, nada más.
 - `src/data/` — `profile.ts`, `stack.ts`, `projects.ts`, `journey.ts`. Todo el contenido vive acá, tipado strict.

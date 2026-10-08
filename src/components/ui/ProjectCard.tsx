@@ -1,8 +1,6 @@
-import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 import { useState, type ReactNode } from "react";
 import type { Project } from "../../data/projects";
-import { useReducedMotion } from "../../hooks/useReducedMotion";
 import { GithubIcon } from "./BrandIcons";
 import { Tag } from "./Tag";
 
@@ -11,18 +9,11 @@ interface ProjectCardProps {
 }
 
 export function ProjectCard({ project }: ProjectCardProps): ReactNode {
-  const reduced = useReducedMotion();
   const [selected, setSelected] = useState<number>(0);
   const images = project.images ?? [];
   const current = images[selected];
   return (
-    <motion.article
-      initial={reduced ? false : { opacity: 0, y: 16 }}
-      whileInView={reduced ? undefined : { opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-60px" }}
-      transition={{ duration: 0.4 }}
-      className="flex flex-col rounded-xl border border-border bg-surface p-5 transition-colors hover:border-teal/60"
-    >
+    <article className="flex flex-col rounded-xl border border-border bg-surface p-5 transition-colors hover:border-teal/60">
       {current ? (
         <figure className="mb-4">
           <img
@@ -95,6 +86,6 @@ export function ProjectCard({ project }: ProjectCardProps): ReactNode {
           GitHub
         </a>
       </div>
-    </motion.article>
+    </article>
   );
 }

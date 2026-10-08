@@ -73,6 +73,13 @@ describe("portfolio", () => {
     expect(headings[0]).toBe("EasyEventQR");
   });
 
+  it("el contenido sigue en el DOM con la animación de scroll", () => {
+    // Reveal nunca desmonta: anclas, scroll-spy y find-in-page funcionan
+    render(<App />);
+    expect(screen.getByText("cat tech-stack.yaml")).toBeInTheDocument();
+    expect(screen.getByText(/aislamiento de datos entre clientes/)).toBeInTheDocument();
+  });
+
   it("el scroll-spy marca la sección activa en el nav", () => {
     render(<App />);
     const nav = screen.getByRole("navigation", { name: "Navegación principal" });

@@ -23,6 +23,7 @@ body {
   background-color: var(--bg);
   background-image: radial-gradient(rgba(148, 178, 255, 0.09) 1px, transparent 1px);
   background-size: 22px 22px;
+  background-attachment: fixed;
   color: var(--text);
   font-family: var(--font-sans);
 }
