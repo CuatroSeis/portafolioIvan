@@ -1,0 +1,49 @@
+@import "tailwindcss";
+@import "./styles/tokens.css";
+
+@theme {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface2: var(--surface-2);
+  --color-border: var(--border);
+  --color-teal: var(--teal);
+  --color-violet: var(--violet);
+  --color-amber: var(--amber);
+  --color-ink: var(--text);
+  --color-muted: var(--muted);
+  --font-mono: var(--font-mono);
+  --font-sans: var(--font-sans);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  background-image: radial-gradient(rgba(148, 178, 255, 0.09) 1px, transparent 1px);
+  background-size: 22px 22px;
+  color: var(--text);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: rgba(45, 212, 191, 0.3);
+}
+
+:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,17 @@
+:root {
+  --bg: #070c18;
+  --surface: #0d1628;
+  --surface-2: #111d33;
+  --border: #1e2d4a;
+  --teal: #2dd4bf;
+  --teal-dim: #14b8a6;
+  --violet: #a78bfa;
+  --amber: #fbbf24;
+  --text: #e9eff9;
+  --muted: #9aa8c0;
+  --red: #f87171;
+  --yellow: #facc15;
+  --radius: 12px;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+}

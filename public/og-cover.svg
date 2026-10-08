@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#070c18"/>
+  <g fill="#2dd4bf" font-family="monospace" font-size="44" font-weight="bold">
+    <text x="80" y="220">~/ivan$ whoami</text>
+  </g>
+  <g fill="#e9eff9" font-family="monospace" font-size="40">
+    <text x="80" y="320">Ivan Ezequiel Rufino</text>
+  </g>
+  <g fill="#9aa8c0" font-family="monospace" font-size="30">
+    <text x="80" y="380">Desarrollador Fullstack · React · TypeScript · Node.js</text>
+  </g>
+  <g fill="#fbbf24" font-family="monospace" font-size="28">
+    <text x="80" y="460">3 apps desplegadas · 294 tests en un solo proyecto</text>
+  </g>
+</svg>
