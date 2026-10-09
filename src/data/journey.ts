@@ -9,9 +9,9 @@ export const journey: JourneyItem[] = [
   {
     ref: "HEAD",
     title: "Mentoría en Desarrollo Web Fullstack",
-    meta: "con Sebastián Sperandio · 11 meses (en curso) · 2 sesiones semanales",
+    meta: "con Sebastián Sperandio · 12 meses",
     bullets: [
-      "React avanzado (Custom Hooks, Reducers, Context API), TypeScript, Node.js, buenas prácticas de código.",
+      "React, TypeScript, Node.js, buenas prácticas de código.",
     ],
   },
   {
@@ -24,10 +24,10 @@ export const journey: JourneyItem[] = [
   },
   {
     ref: "HEAD~2",
-    title: "Formación autodidacta",
+    title: "Formación autodidacta - Guia con Mentor",
     meta: "cursos de Udemy con proyectos prácticos",
     bullets: [
-      "HTML, CSS, JavaScript moderno (ES6+), React y TypeScript.",
+      "HTML, CSS, JavaScript moderno (ES6+), React, NODE.js y TypeScript.",
     ],
   },
 ];
